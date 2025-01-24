@@ -5,7 +5,7 @@ export const Bio = {
     ],
     description:
       "I am a student at University of North Texas. I am a passionate and self-motivated individual, who is eager to learn new technologies and apply them to real-world problems. I am a quick learner and a team player who is always ready to take on new challenges.",
-    github: "https://github.com/Ronitsabaya75",
+    github: "https://github.com/Ronitsabhaya75",
     resume:
       "https://drive.google.com/file/d/19hTCAV7JFO3v15zK-vjP2u_OIpLodMFq/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/ronitkumarsabhaya75/",
