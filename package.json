@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://Ronitsabhaya75.github.io",
+  "homepage": "https://Ronitsabhaya75.github.io/Portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@emotion/react": "^11.11.0",
