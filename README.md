@@ -9,7 +9,6 @@ Welcome to my personal portfolio repository! This project showcases my skills, e
 - [Technologies Used](#technologies-used)
 - [Setup and Installation](#setup-and-installation)
 - [Contributing](#contributing)
-- [Contact](#contact)
 
 ## About
 
@@ -31,7 +30,6 @@ This portfolio website highlights:
 
 - **Frontend**: HTML, CSS, JavaScript, ReactJS
 - **Styling**: Tailwind CSS, Bootstrap
-- **Backend**: Node.js (if applicable)
 - **Hosting**: [GitHub Pages](https://ronitsabhaya75.github.io/Portfolio/)
 
 ## Setup and Installation
