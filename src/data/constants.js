@@ -7,7 +7,7 @@ export const Bio = {
       "I am an aspiring software developer. I am a passionate and self-motivated individual, who is eager to learn new technologies and apply them to real-world problems. I am a quick learner and a team player who is always ready to take on new challenges.",
     github: "https://github.com/Ronitsabhaya75",
     resume:
-      "https://drive.google.com/file/d/19hTCAV7JFO3v15zK-vjP2u_OIpLodMFq/view?usp=sharing",
+      "https://drive.google.com/file/d/1wViRno0NU6wvvLDk-RHsMHR51VC8b2EK/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/ronitkumarsabhaya75/",
   };
   
