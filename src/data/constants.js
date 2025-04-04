@@ -123,6 +123,14 @@ export const Bio = {
   export const experiences = [
     {
       id: 0,
+      img: "https://play-lh.googleusercontent.com/HfafyLT1aZdsPbTaEaMbujAvQ8eCjkIr5oB0lRgVcNNhY6F9YlYbBSnQ57AIjBUY-7c=w600-h300-pc0xffffff-pd",
+      role: "Research Assistant",
+      company: "University of North Texas",
+      date: "March 2025 - Present",
+      desc: "Reviewing and analyzing Research papers on voice biometrics, spoof detection, and signal processing techniques.Assisting a master's student on research focused on AI-based voice liveness detection to determine whether a sound input is real or fake.",
+    },
+    {
+      id: 1,
       img: "https://upload.wikimedia.org/wikipedia/en/2/29/University_of_Texas_at_Arlington_seal.svg",
       role: "Computer Science Tutor",
       company: "University of Texas at Arlington",
@@ -130,7 +138,7 @@ export const Bio = {
       desc: "Mentored 30+ students, assisting students in mastering subject material and solving complex programming problems. Facilitated 10 hours of weekly one-on-one tutoring sessions, teaching students and enhancing my understanding of problem-solving strategies.Collaborated with Student Success Center representatives in weekly meetings to discuss strategies for improving student outcomes and enhancing tutoring services.",
     },
     {
-      id: 0,
+      id: 2,
       img: "https://itlab.uta.edu/logo/itlab_logo.jpg",
       role: "Research Assistant",
       company: "IT Lab, University of Texas at Arlington",
@@ -199,7 +207,6 @@ export const Bio = {
     {
       id: 3,
       title: "Frame Flex Toolkit",
-      date: "Dec 2021 - Apr 2022",
       description:
         "Built a live camera feed system with user-selectable modes, using OpenCV for real-time video processing. Implemented pixel-change detection feature that analyzed frame variations using histograms, achieving 60% accuracy in dynamic region detection.",
       image:
@@ -207,5 +214,14 @@ export const Bio = {
       tags: ["OpenCV", "Python", "Matplotlib"],
       webapp: "https://github.com/Ronitsabhaya75/FramFlex_Toolkit",
     },
+    {
+      id: 4,
+      title: "Codemeet.dev",
+      description:
+        "An AI platform that can help students to practice mock interview coding problems with real-time feedback and suggestions.",
+      image:"./images/codemeet.png",
+      tags: ["ReactJS", "Express.js", "Node", "PostgreSQL", "Deepseek API", "Tailwind CSS"],
+      webapp: "https://www.codemeet.dev"
+    }
   ];
   
