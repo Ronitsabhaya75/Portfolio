@@ -116,11 +116,26 @@ export const Bio = {
           image:
             "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
         },
+        {
+          name: "Podman",
+          image:
+          "https://media.licdn.com/dms/image/v2/D4D12AQFR5SrFqSc9Jg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679516923979?e=2147483647&v=beta&t=E5GkA3WZXFH5EoZ-xnRdTAyoEOAiaE9Yj_bhJDCxq-s"
+        },
+
       ],
     },
   ];
   
   export const experiences = [
+    {
+      id: 1,
+      img: "https://cdn-ildemel.nitrocdn.com/XEEjRYIouyUFAWtgWMprCNudwxCYPEtl/assets/images/optimized/rev-ed90d2a/tradingtechnologies.com/wp-content/uploads/2024/07/logo-tt-2line.png",
+      role: "Software Engineer Intern",
+      company: "Trading Technologies",
+      date: "June 2025 - Aug 2025",
+      desc: " Led cross-functional efforts to optimize CI workflows, improving test monitoring efficiency by 40% and accelerating delivery cycles. Designed  custom CI GitHub Actions workflows to automate testing pipelines, improving file checking efficiency by 30%. Configured self-hosted GitHub runners on AWS EC2 using launch templates, reducing test workflow execution time by 20% and improving CI efficiency. Built Podman container using GitHub API to fetch latest release hooks, accelerating TTUS image builds by 33%.",
+    }, 
+
     {
       id: 0,
       img: "https://play-lh.googleusercontent.com/HfafyLT1aZdsPbTaEaMbujAvQ8eCjkIr5oB0lRgVcNNhY6F9YlYbBSnQ57AIjBUY-7c=w600-h300-pc0xffffff-pd",
@@ -129,8 +144,9 @@ export const Bio = {
       date: "March 2025 - Present",
       desc: "Reviewing and analyzing Research papers on voice biometrics, spoof detection, and signal processing techniques.Assisting a master's student on research focused on AI-based voice liveness detection to determine whether a sound input is real or fake.",
     },
+
     {
-      id: 1,
+      id: 2,
       img: "https://upload.wikimedia.org/wikipedia/en/2/29/University_of_Texas_at_Arlington_seal.svg",
       role: "Computer Science Tutor",
       company: "University of Texas at Arlington",
@@ -138,7 +154,7 @@ export const Bio = {
       desc: "Mentored 30+ students, assisting students in mastering subject material and solving complex programming problems. Facilitated 10 hours of weekly one-on-one tutoring sessions, teaching students and enhancing my understanding of problem-solving strategies.Collaborated with Student Success Center representatives in weekly meetings to discuss strategies for improving student outcomes and enhancing tutoring services.",
     },
     {
-      id: 2,
+      id: 3,
       img: "https://itlab.uta.edu/logo/itlab_logo.jpg",
       role: "Research Assistant",
       company: "IT Lab, University of Texas at Arlington",
@@ -153,7 +169,7 @@ export const Bio = {
       img: "https://play-lh.googleusercontent.com/HfafyLT1aZdsPbTaEaMbujAvQ8eCjkIr5oB0lRgVcNNhY6F9YlYbBSnQ57AIjBUY-7c=w600-h300-pc0xffffff-pd",
       school: "University of North Texas",
       date: "Jan 2025 - Present",
-      grade: "",
+      grade: "3.80/4.00",
       degree: "Bachelor of Science - Computer Science",
     },
     {
