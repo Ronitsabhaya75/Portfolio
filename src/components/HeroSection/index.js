@@ -1,6 +1,5 @@
 import React from 'react'
-import HeroBgAnimation from '../HeroBgAnimation'
-import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle,SocialMediaIcons,SocialMediaIcon, ResumeButton } from './HeroStyle'
+import { HeroContainer, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle, SocialLinks, SocialLink, StatusIndicator, StatusDot, StatusText } from './HeroStyle'
 import HeroImg from '../../images/HeroImage.jpg'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
@@ -9,12 +8,13 @@ const HeroSection = () => {
     return (
         <div id="about">
             <HeroContainer>
-                <HeroBg>
-                    <HeroBgAnimation />
-                </HeroBg>
+                <StatusIndicator>
+                    <StatusDot />
+                    <StatusText>available for work</StatusText>
+                </StatusIndicator>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <Title>{Bio.name}.</Title>
                         <TextLoop>
                             <Span>
                                 <Typewriter
@@ -27,15 +27,24 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>View Resume</ResumeButton>
+                        
+                        <SocialLinks>
+                            <SocialLink href={`mailto:rds0429@mavs.uta.edu`}>
+                                📧 E-mail
+                            </SocialLink>
+                            <SocialLink href={Bio.github} target="_blank">
+                                🔗 Github
+                            </SocialLink>
+                            <SocialLink href={Bio.linkedin} target="_blank">
+                                💼 LinkedIn
+                            </SocialLink>
+                        </SocialLinks>
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
-
                         <Img src={HeroImg} alt="hero-image" />
                     </HeroRightContainer>
                 </HeroInnerContainer>
-
             </HeroContainer>
         </div>
     )

@@ -1,22 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = styled.button`
-    display: none;
-    width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
-`
 const Card = styled.div`
     width: 330px;
-    height: 490px;
+    height: 280px;
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;
@@ -27,22 +14,13 @@ const Card = styled.div`
     flex-direction: column;
     gap: 14px;
     transition: all 0.5s ease-in-out;
+    border: 1px solid #333;
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
         filter: brightness(1.1);
+        border-color: #555;
     }
-    &:hover ${Button} {
-        display: block;
-    }
-`
-
-const Image = styled.img`
-    width: 100%;
-    height: 180px;
-    background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
 `
 
 const Tags = styled.div`
@@ -93,19 +71,6 @@ const Date = styled.div`
     }
 `
 
-
-const Description = styled.div`
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    overflow: hidden;
-    margin-top: 8px;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-`
-
 const Members = styled.div`
     display: flex;
     align-items: center;
@@ -121,26 +86,31 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({project}) => {
+    const handleClick = () => {
+        if (project.webapp) {
+            window.open(project.webapp, '_blank');
+        } else if (project.github) {
+            window.open(project.github, '_blank');
+        }
+    };
+
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+        <Card onClick={handleClick}>
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag>{tag}</Tag>
+                <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member) => (
-                    <Avatar src={member.img}/>
+                {project.member?.map((member, index) => (
+                    <Avatar key={index} src={member.img}/>
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
         </Card>
     )
 }
