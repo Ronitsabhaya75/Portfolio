@@ -29,14 +29,14 @@ const HeroSection = () => {
                         <SubTitle>{Bio.description}</SubTitle>
                         
                         <SocialLinks>
-                            <SocialLink href={`mailto:rds0429@mavs.uta.edu`}>
-                                📧 E-mail
+                            <SocialLink href={`mailto: ronitsabhaya75@gmail.com`}>
+                                E-mail
                             </SocialLink>
                             <SocialLink href={Bio.github} target="_blank">
-                                🔗 Github
+                                Github
                             </SocialLink>
                             <SocialLink href={Bio.linkedin} target="_blank">
-                                💼 LinkedIn
+                                LinkedIn
                             </SocialLink>
                         </SocialLinks>
                     </HeroLeftContainer>
@@ -49,5 +49,6 @@ const HeroSection = () => {
         </div>
     )
 }
+
 
 export default HeroSection
