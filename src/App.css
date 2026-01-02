@@ -16,26 +16,27 @@ body{
   margin: 0px !important;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  background-attachment: fixed;
 }
 
-/* width */
+/* Glassmorphism effect for scrollbar */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 6px;
     height: 80px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
-    background:#222A35;
+    background: rgba(34, 42, 53, 0.3);
+    backdrop-filter: blur(10px);
   }
   
-  /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #575C66;
-    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #626970;
+    background: rgba(255, 255, 255, 0.25);
   }

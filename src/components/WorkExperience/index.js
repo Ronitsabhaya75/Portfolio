@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { experiences } from '../../data/constants'
+import { motion } from 'framer-motion'
 
 const Container = styled.div`
     display: flex;
@@ -47,40 +48,48 @@ const ExperienceList = styled.div`
 const ExperienceCard = styled.div`
     display: flex;
     gap: 20px;
-    padding: 20px;
-    background: ${({ theme }) => theme.card};
-    border: 1px solid #333;
-    border-radius: 12px;
-    transition: all 0.2s ease;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
     
     &:hover {
-        border-color: #555;
-        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
     }
     
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 16px;
-        padding: 16px;
+        padding: 20px;
     }
 `;
 
 const CompanyLogo = styled.div`
     width: 60px;
     height: 60px;
-    border-radius: 12px;
-    background: ${({ theme }) => theme.bgLight};
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
     
     img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        border-radius: 8px;
+        border-radius: 12px;
     }
     
     @media (max-width: 768px) {
@@ -159,37 +168,53 @@ const Location = styled.span`
 const WorkExperience = () => {
     return (
         <Container id="work-experience">
-            <SectionHeader>
-                <Title>Work Experience</Title>
-            </SectionHeader>
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6 }}
+            >
+                <SectionHeader>
+                    <Title>Work Experience</Title>
+                </SectionHeader>
+            </motion.div>
             <ExperienceList>
                 {experiences.map((experience, index) => (
-                    <ExperienceCard key={index}>
-                        <CompanyLogo>
-                            {experience.img && (
-                                <img 
-                                    src={experience.img} 
-                                    alt={`${experience.company} logo`}
-                                    onError={(e) => {
-                                        e.target.style.display = 'none';
-                                    }}
-                                />
-                            )}
-                        </CompanyLogo>
-                        <ExperienceContent>
-                            <JobTitle>{experience.role}</JobTitle>
-                            <Company>{experience.company}</Company>
-                            <DateLocation>
-                                <Date>{experience.date}</Date>
-                                <Location>
-                                    {experience.company.includes('Trading Technologies') ? 'Chicago, IL' :
-                                     experience.company.includes('University of North Texas') ? 'Denton, TX' :
-                                     experience.company.includes('University of Texas at Arlington') ? 'Arlington, TX' :
-                                     experience.company.includes('IT Lab') ? 'Arlington, TX' : 'Remote'}
-                                </Location>
-                            </DateLocation>
-                        </ExperienceContent>
-                    </ExperienceCard>
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        whileHover={{ scale: 1.02 }}
+                    >
+                        <ExperienceCard>
+                            <CompanyLogo>
+                                {experience.img && (
+                                    <img 
+                                        src={experience.img} 
+                                        alt={`${experience.company} logo`}
+                                        onError={(e) => {
+                                            e.target.style.display = 'none';
+                                        }}
+                                    />
+                                )}
+                            </CompanyLogo>
+                            <ExperienceContent>
+                                <JobTitle>{experience.role}</JobTitle>
+                                <Company>{experience.company}</Company>
+                                <DateLocation>
+                                    <Date>{experience.date}</Date>
+                                    <Location>
+                                        {experience.company.includes('Trading Technologies') ? 'Chicago, IL' :
+                                         experience.company.includes('University of North Texas') ? 'Denton, TX' :
+                                         experience.company.includes('University of Texas at Arlington') ? 'Arlington, TX' :
+                                         experience.company.includes('IT Lab') ? 'Arlington, TX' : 'Remote'}
+                                    </Location>
+                                </DateLocation>
+                            </ExperienceContent>
+                        </ExperienceCard>
+                    </motion.div>
                 ))}
             </ExperienceList>
         </Container>

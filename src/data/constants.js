@@ -19,7 +19,7 @@ export const Bio = {
       role: "Software Engineer Intern",
       company: "Trading Technologies",
       date: "June 2025 - Aug 2025",
-      desc: " • Reduced manual PR review time by 30% by implementing Python path mapping algorithms within a Yaml file to detect missing test files by cross-referencing file-path metadata. Designed an automated notification system that accelerated failure detection by 39% to intercept test failures and stream real-time diagnostic reports to Slack Improved testing efficiency by 35% by architecting an AWS Launch Templates to initialize EC2 instances for high-performance, self-hosted test execution. Optimized image-building process by replacing manual S3 workflows with an automated fetch and build system byutilizing Podman and Kubernetes to accelerate the deployment of containers by 33%.",
+      desc: "• Reduced manual PR review time by 30% by implementing Python path mapping algorithms within a Yaml file to detect missing test files by cross-referencing file-path metadata.\n• Designed an automated notification system that accelerated failure detection by 39% to intercept test failures and stream real-time diagnostic reports to Slack.\n• Improved testing efficiency by 35% by architecting AWS Launch Templates to initialize EC2 instances for high-performance, self-hosted test execution.\n• Optimized image-building process by replacing manual S3 workflows with an automated fetch and build system by utilizing Podman and Kubernetes to accelerate the deployment of containers by 33%.",
     }, 
 
     {

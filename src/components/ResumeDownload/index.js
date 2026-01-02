@@ -52,7 +52,7 @@ const DownloadButton = styled.a`
     }
     
     &::before {
-        content: '⬇️';
+        content: '⬇';
         font-size: 14px;
     }
 `;

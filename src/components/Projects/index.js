@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import ProjectCard from '../Cards/ProjectCards'
 import { projects } from '../../data/constants'
+import { motion } from 'framer-motion'
 
 const Container = styled.div`
     display: flex;
@@ -50,12 +51,28 @@ const CardContainer = styled.div`
 const Projects = () => {
   return (
     <Container id="projects">
-        <SectionHeader>
-            <Title>Projects</Title>
-        </SectionHeader>
+        <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.6 }}
+        >
+            <SectionHeader>
+                <Title>Projects</Title>
+            </SectionHeader>
+        </motion.div>
         <CardContainer>
           {projects.map((project, index) => (
-              <ProjectCard key={index} project={project}/>
+              <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  whileHover={{ y: -5 }}
+              >
+                  <ProjectCard project={project}/>
+              </motion.div>
           ))}
         </CardContainer>
     </Container>

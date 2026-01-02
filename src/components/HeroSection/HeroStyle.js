@@ -25,6 +25,13 @@ export const StatusIndicator = styled.div`
   margin-bottom: 40px;
   width: 100%;
   max-width: 1200px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
   
   @media (max-width: 960px) {
     margin-bottom: 32px;
@@ -115,9 +122,15 @@ export const Img = styled.img`
   max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
-  border: 2px solid ${({ theme }) => theme.primary};
+  border: 3px solid rgba(255, 255, 255, 0.2);
   object-fit: cover;
   object-position: center;
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    0 0 60px rgba(255, 255, 255, 0.1),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 
   @media (max-width: 768px) {
     width: 350px;
@@ -196,31 +209,42 @@ export const SubTitle = styled.div`
 
 export const SocialLinks = styled.div`
   display: flex;
-  gap: 24px;
+  gap: 16px;
   margin-top: 32px;
   
   @media (max-width: 640px) {
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
   }
 `;
 
 export const SocialLink = styled.a`
-  color: ${({ theme }) => theme.text_secondary};
+  color: ${({ theme }) => theme.text_primary};
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  transition: color 0.2s ease;
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   
   &:hover {
-    color: ${({ theme }) => theme.text_primary};
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   }
   
   @media (max-width: 640px) {
     font-size: 14px;
+    padding: 10px 24px;
   }
 `;
 

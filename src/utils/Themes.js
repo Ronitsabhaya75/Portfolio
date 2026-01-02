@@ -1,14 +1,17 @@
 export const darkTheme = {
-    bg:"#0a0a0a",
-    bgLight: "#111111",
+    bg:"linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%)",
+    bgLight: "rgba(17, 17, 17, 0.3)",
     primary:"#ffffff",
     text_primary:"#ffffff",
-    text_secondary:"#888888",
-    card:"#1a1a1a",
-    card_light: '#1a1a1a',
+    text_secondary:"#b4b4b4",
+    card:"rgba(255, 255, 255, 0.05)",
+    cardBorder:"rgba(255, 255, 255, 0.1)",
+    card_light: 'rgba(255, 255, 255, 0.03)',
     button:"#ffffff",
     white:"#FFFFFF",
     black:"#000000",
+    glass: "rgba(255, 255, 255, 0.08)",
+    glassBorder: "rgba(255, 255, 255, 0.15)",
 }
 
 export const lightTheme = {
