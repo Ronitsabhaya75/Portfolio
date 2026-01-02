@@ -19,7 +19,7 @@ export const Bio = {
       role: "Software Engineer Intern",
       company: "Trading Technologies",
       date: "June 2025 - Aug 2025",
-      desc: " Led cross-functional efforts to optimize CI workflows, improving test monitoring efficiency by 40% and accelerating delivery cycles. Designed  custom CI GitHub Actions workflows to automate testing pipelines, improving file checking efficiency by 30%. Configured self-hosted GitHub runners on AWS EC2 using launch templates, reducing test workflow execution time by 20% and improving CI efficiency. Built Podman container using GitHub API to fetch latest release hooks, accelerating TTUS image builds by 33%.",
+      desc: " • Reduced manual PR review time by 30% by implementing Python path mapping algorithms within a Yaml file to detect missing test files by cross-referencing file-path metadata. Designed an automated notification system that accelerated failure detection by 39% to intercept test failures and stream real-time diagnostic reports to Slack Improved testing efficiency by 35% by architecting an AWS Launch Templates to initialize EC2 instances for high-performance, self-hosted test execution. Optimized image-building process by replacing manual S3 workflows with an automated fetch and build system byutilizing Podman and Kubernetes to accelerate the deployment of containers by 33%.",
     }, 
 
     {
@@ -71,42 +71,27 @@ export const Bio = {
   export const projects = [
     {
       id: 0,
+      title: "Apple Containers",
+      tags: ["Swift", "Github Actions", "Containers"],
+      webapp: "https://opensource.apple.com/projects/container/",
+      github: "https://github.com/apple/container",
+    },
+    {
+      id: 1,
+      title: "AutoBoard",
+      tags: [
+        "React", "AWS Lambda", "AWS S3", "Gemini", "AWS RDS", "FastAPI", "AWS VPC",
+      ],
+      webapp: "https://github.com/Rabib001/HackUTD_2025",
+      github: "https://github.com/Rabib001/HackUTD_2025",
+    },
+    {
+      id: 2,
       title: "Multi Layer Network Dashboard",
       tags: ["Flask", "Python", "Pyvis", "Plotly", "Matplotlib", "C++", "SQLite", "Bokeh", "NetworkX"],
       webapp: "https://itlab.uta.edu/mlndash-live/",
     },
-    {
-      id: 1,
-      title: "Hotel Management System",
-      tags: [
-        "Spring Boot",
-        "MySQL",
-        "AWS S3",
-        "HTTP",
-        "Postman",
-        "Rest API",
-      ],
-      webapp: "https://github.com/Ronitsabhaya75/Hotel-Management-System",
-      github: "https://github.com/Ronitsabhaya75/Hotel-Management-System",
-    },
-    {
-      id: 2,
-      title: "Elevate Me",
-      tags: ["Figma", "Tailwind CSS", "ReactJS", "MongoDB", "Firebase", "Flask", "Python", "Project Management"],
-      webapp: "https://elevatemeapp.co/",
-    },
-    {
-      id: 3,
-      title: "Frame Flex Toolkit",
-      tags: ["OpenCV", "Python", "Matplotlib"],
-      webapp: "https://github.com/Ronitsabhaya75/FramFlex_Toolkit",
-      github: "https://github.com/Ronitsabhaya75/FramFlex_Toolkit",
-    },
-    {
-      id: 4,
-      title: "Codemeet.dev",
-      tags: ["ReactJS", "Express.js", "Node", "PostgreSQL", "Deepseek API", "Tailwind CSS"],
-      webapp: "https://www.codemeet.dev"
-    }
+
+
   ];
   
