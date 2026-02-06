@@ -45,7 +45,7 @@ function App() {
   const [darkMode] = useState(true);
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router >
+      <Router basename={process.env.PUBLIC_URL}>
         <Body>
           <ContentWrapper>
             <HeroSection />
