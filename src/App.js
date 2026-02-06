@@ -9,7 +9,7 @@ import EducationSection from "./components/EducationSection";
 import Projects from "./components/Projects";
 import ResumeDownload from "./components/ResumeDownload";
 import styled from "styled-components";
-import { motion } from "framer-motion";
+
 
 const Body = styled.div`
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
