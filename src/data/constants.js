@@ -71,10 +71,10 @@ export const Bio = {
   export const projects = [
     {
       id: 0,
-      title: "Apple Containers",
-      tags: ["Swift", "Github Actions", "Containers"],
-      webapp: "https://opensource.apple.com/projects/container/",
-      github: "https://github.com/apple/container",
+      title: "AWS CDK",
+      tags: ["Typescript", "Cloud infra", "Infrastructure as code", "AWS", "Shell", "Alloy", "Docker"],
+      webapp: "https://aws.amazon.com/cdk/",
+      github: "https://github.com/aws/aws-cdk",
     },
     {
       id: 1,
@@ -93,10 +93,27 @@ export const Bio = {
       github: "https://github.com/Rabib001/HackUTD_2025",
     },
     {
-      id: 1,
-      title: "Multi Layer Network Dashboard",
-      tags: ["Flask", "Python", "Pyvis", "Plotly", "Matplotlib", "C++", "SQLite", "Bokeh", "NetworkX"],
-      webapp: "https://itlab.uta.edu/mlndash-live/",
+      id: 3,
+      title: "Lux-UI",
+      tags: [
+        "Swift", "iOS", "macOS", "SwiftUI", "Github Actions"
+      ],
+      webapp: "https://luxeui.vercel.app/",
+      github: "https://github.com/Ronitsabhaya75/Luxe-UI",
+    },
+    {
+      id: 5,
+      title: "Apple Containers",
+      tags: ["Swift", "Github Actions", "Containers", "Linux", "macOS"],
+      webapp: "https://opensource.apple.com/projects/container/",
+      github: "https://github.com/apple/container",
+    },
+    {
+      id: 4,
+      title: "Apple Swift System metrics",
+      tags: ["SwiftUI", "Instruments", "Promoethus", "Grafana", "Linux", "macOS", "Darwin", "iOS", "watchOS", "tvOS"],
+        webapp: "https://swiftpackageindex.com/apple/swift-system-metrics/1.2.1/documentation/systemmetrics",
+      github: "https://github.com/apple/swift-system-metrics",
     },
 
 
