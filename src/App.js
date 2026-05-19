@@ -7,7 +7,7 @@ import HeroSection from "./components/HeroSection";
 import WorkExperience from "./components/WorkExperience";
 import EducationSection from "./components/EducationSection";
 import Projects from "./components/Projects";
-import ResumeDownload from "./components/ResumeDownload";
+// import ResumeDownload from "./components/ResumeDownload";
 import styled from "styled-components";
 
 
@@ -52,7 +52,7 @@ function App() {
             <WorkExperience />
             <EducationSection />
             <Projects />
-            <ResumeDownload />
+            // <ResumeDownload />
           </ContentWrapper>
         </Body>
       </Router>
